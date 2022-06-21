@@ -2,7 +2,7 @@
 
 int main()
 {
-   int i, option;
+   int option;
    char string_to_encrypt[100];
 
    std::cout << "Please enter a string:\t";
@@ -16,7 +16,7 @@ int main()
    switch (option)
    {
       case 1:
-         for (i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
+         for (int i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
          {
             string_to_encrypt[i] = string_to_encrypt[i] + 2;
          }
@@ -25,7 +25,7 @@ int main()
          break;
 
       case 2:
-         for (i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
+         for (int i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
          {
             string_to_encrypt[i] = string_to_encrypt[i] - 2;
          }
