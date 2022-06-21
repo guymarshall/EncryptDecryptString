@@ -2,11 +2,12 @@
 
 int main()
 {
+   //TODO use std::string
    char string_to_encrypt[100];
    std::cout << "Please enter a string:\t";
    std::cin >> string_to_encrypt;
 
-
+   //TODO output to txt file
    int option;
    std::cout << "\nPlease choose following options:\n";
    std::cout << "1 = Encrypt the string.\n";
