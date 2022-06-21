@@ -21,7 +21,9 @@ int main()
       //first case for encrypting a string
       case 1:
          for (i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
+         {
             string_to_encrypt[i] = string_to_encrypt[i] + 2; //the key for encryption is 3 that is added to ASCII value
+         }
 
          std::cout << "\nEncrypted string: " << string_to_encrypt << std::endl;
          break;
@@ -29,7 +31,9 @@ int main()
       //second case for decrypting a string
       case 2:
          for (i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
+         {
             string_to_encrypt[i] = string_to_encrypt[i] - 2; //the key for encryption is 3 that is subtracted to ASCII value
+         }
 
       std::cout << "\nDecrypted string: " << string_to_encrypt << std::endl;
       break;
