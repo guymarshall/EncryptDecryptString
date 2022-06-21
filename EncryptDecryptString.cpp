@@ -1,5 +1,3 @@
-//Simple C++ program to encrypt and decrypt a string
-
 #include <iostream>
 
 int main()
@@ -15,24 +13,21 @@ int main()
    std::cout << "2 = Decrypt the string.\n";
    std::cin >> option;
 
-   //using switch case statements
    switch (option)
    {
-      //first case for encrypting a string
       case 1:
          for (i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
          {
-            string_to_encrypt[i] = string_to_encrypt[i] + 2; //the key for encryption is 3 that is added to ASCII value
+            string_to_encrypt[i] = string_to_encrypt[i] + 2;
          }
 
          std::cout << "\nEncrypted string: " << string_to_encrypt << std::endl;
          break;
 
-      //second case for decrypting a string
       case 2:
          for (i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
          {
-            string_to_encrypt[i] = string_to_encrypt[i] - 2; //the key for encryption is 3 that is subtracted to ASCII value
+            string_to_encrypt[i] = string_to_encrypt[i] - 2;
          }
 
       std::cout << "\nDecrypted string: " << string_to_encrypt << std::endl;
