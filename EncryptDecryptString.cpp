@@ -4,34 +4,34 @@
 
 int main()
 {
-   int i, x;
-   char str[100];
+   int i, option;
+   char string_to_encrypt[100];
 
    std::cout << "Please enter a string:\t";
-   std::cin >> str;
+   std::cin >> string_to_encrypt;
 
    std::cout << "\nPlease choose following options:\n";
    std::cout << "1 = Encrypt the string.\n";
    std::cout << "2 = Decrypt the string.\n";
-   std::cin >> x;
+   std::cin >> option;
 
    //using switch case statements
-   switch(x)
+   switch(option)
    {
       //first case for encrypting a string
       case 1:
-         for(i = 0; (i < 100 && str[i] != '\0'); i++)
-            str[i] = str[i] + 2; //the key for encryption is 3 that is added to ASCII value
+         for(i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
+            string_to_encrypt[i] = string_to_encrypt[i] + 2; //the key for encryption is 3 that is added to ASCII value
 
-         std::cout << "\nEncrypted string: " << str << std::endl;
+         std::cout << "\nEncrypted string: " << string_to_encrypt << std::endl;
          break;
 
       //second case for decrypting a string
       case 2:
-         for(i = 0; (i < 100 && str[i] != '\0'); i++)
-         str[i] = str[i] - 2; //the key for encryption is 3 that is subtracted to ASCII value
+         for(i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
+         string_to_encrypt[i] = string_to_encrypt[i] - 2; //the key for encryption is 3 that is subtracted to ASCII value
 
-      std::cout << "\nDecrypted string: " << str << std::endl;
+      std::cout << "\nDecrypted string: " << string_to_encrypt << std::endl;
       break;
 
       default:
