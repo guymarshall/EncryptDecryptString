@@ -2,12 +2,12 @@
 
 int main()
 {
-   int option;
    char string_to_encrypt[100];
-
    std::cout << "Please enter a string:\t";
    std::cin >> string_to_encrypt;
 
+
+   int option;
    std::cout << "\nPlease choose following options:\n";
    std::cout << "1 = Encrypt the string.\n";
    std::cout << "2 = Decrypt the string.\n";
