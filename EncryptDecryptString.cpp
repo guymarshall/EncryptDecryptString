@@ -1,9 +1,9 @@
 #include <iostream>
+#include <string>
 
 int main()
 {
-   //TODO use std::string
-   char string_to_encrypt[100];
+   std::string string_to_encrypt;
    std::cout << "Please enter a string:\t";
    std::cin >> string_to_encrypt;
 
