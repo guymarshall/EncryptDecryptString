@@ -3,9 +3,9 @@
 
 int main()
 {
-   std::string string_to_encrypt;
+   std::string stringToEncrypt;
    std::cout << "Please enter a string:\t";
-   std::cin >> string_to_encrypt;
+   std::cin >> stringToEncrypt;
 
    //TODO output to txt file
    int option;
@@ -17,21 +17,21 @@ int main()
    switch (option)
    {
       case 1:
-         for (int i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
+         for (int i = 0; (i < 100 && stringToEncrypt[i] != '\0'); i++)
          {
-            string_to_encrypt[i] = string_to_encrypt[i] + 2;
+            stringToEncrypt[i] = stringToEncrypt[i] + 2;
          }
 
-         std::cout << "\nEncrypted string: " << string_to_encrypt << std::endl;
+         std::cout << "\nEncrypted string: " << stringToEncrypt << std::endl;
          break;
 
       case 2:
-         for (int i = 0; (i < 100 && string_to_encrypt[i] != '\0'); i++)
+         for (int i = 0; (i < 100 && stringToEncrypt[i] != '\0'); i++)
          {
-            string_to_encrypt[i] = string_to_encrypt[i] - 2;
+            stringToEncrypt[i] = stringToEncrypt[i] - 2;
          }
 
-      std::cout << "\nDecrypted string: " << string_to_encrypt << std::endl;
+      std::cout << "\nDecrypted string: " << stringToEncrypt << std::endl;
       break;
 
       default:
